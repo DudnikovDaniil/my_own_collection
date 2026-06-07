@@ -62,11 +62,10 @@ my_own_collection/
 ---
 
 ## 3. Ссылки для сдачи
-
 | Что сдаётся | Ссылка |
 |-------------|--------|
 | Коллекция на GitHub | https://github.com/DudnikovDaniil/my_own_collection |
-| .tar.gz архив | https://github.com/DudnikovDaniil/my_own_collection/raw/main/my_own_namespace-yandex_cloud_elk-1.0.0.tar.gz |
+| .tar.gz архив | https://github.com/DudnikovDaniil/my_own_collection/blob/main/my_own_namespace-yandex_cloud_elk-1.0.0.tar.gz |
 
 ---
 
@@ -82,7 +81,7 @@ python -m py_compile my_own_module.py
 
 Результат: ошибок не обнаружено, модуль готов к использованию.
 
-**Скриншот:** `screenshots/step4-module-check.png`
+![step4-module-check](screenshots/step4-module-check.png)
 
 ---
 
@@ -99,9 +98,13 @@ python -m py_compile my_own_module.py
 Результат: `changed=0` — изменений не произошло, идемпотентность соблюдена.
 
 **Скриншоты:**
-- `screenshots/step6-idempotenc1.png` (первый запуск)
-- `screenshots/step6-idempotenc2.png` (второй запуск)
+**Первый запуск (файл создан):**
 
+![step6-idempotence1](screenshots/step6-idempotence1.png)
+
+**Второй запуск (идемпотентность):**
+
+![step6-idempotence2](screenshots/step6-idempotence2.png)
 ---
 
 ### 4.3 Пункт 15 — установка коллекции из архива
@@ -120,7 +123,7 @@ ansible-galaxy collection install my_own_namespace-yandex_cloud_elk-1.0.0.tar.gz
 
 Результат: коллекция успешно установлена в систему.
 
-**Скриншот:** `screenshots/step15-collection-install.png`
+![step15-collection-install](screenshots/step15-collection-install.png)
 
 ---
 
@@ -140,7 +143,7 @@ ansible-galaxy collection install my_own_namespace-yandex_cloud_elk-1.0.0.tar.gz
 
 Результат: `changed=1` — модуль отработал корректно, файл создан.
 
-**Скриншот:** `screenshots/step16-playbook-run.png`
+![step16-playbook-run](screenshots/step16-playbook-run.png)
 
 ---
 
