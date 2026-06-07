@@ -1,0 +1,6 @@
+---
+- name: Test role with my_own_module
+  hosts: localhost
+  gather_facts: no
+  roles:
+    - test_module_role

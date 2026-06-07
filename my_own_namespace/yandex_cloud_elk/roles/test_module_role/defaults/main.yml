@@ -1,0 +1,3 @@
+---
+test_file_path: /tmp/role_test.txt
+test_file_content: "Hello from role!"

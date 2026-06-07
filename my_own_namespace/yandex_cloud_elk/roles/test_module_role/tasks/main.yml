@@ -1,0 +1,10 @@
+---
+- name: Create file using my_own_module
+  my_own_namespace.yandex_cloud_elk.my_own_module:
+    path: "{{ test_file_path | default('/tmp/role_test.txt') }}"
+    content: "{{ test_file_content | default('Hello from role!') }}"
+  register: result
+
+- name: Show result
+  debug:
+    var: result

@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+*.egg
+venv/
+.venv/
+
+# Ansible
+*.retry
+.ansible/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Collection build artifacts
+*.tar.gz
+build/
+
+# Molecule
+.molecule/
+.tox/
+
+# Temporary files
+*.tmp
+*.log
+*.pid
